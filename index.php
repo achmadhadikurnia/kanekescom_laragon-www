@@ -5,7 +5,7 @@ $domain 				= '.local';
 $show_project           = 'both'; // directory, domain, both
 $scanned_directories	= array_diff(scandir($directory), array('..', '.'));
 $skip_start_with		= array('.');
-$skip_file_name		    = array('index.php');
+$skip_file_name		    = array('index.php', 'composer.phar');
 
 if (!empty($_GET['q'])) {
 	switch ($_GET['q']) {
